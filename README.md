@@ -1,45 +1,43 @@
-# Selim Reza - Personal Portfolio
+<h1 align="center">Hi 👋, I'm Selim Reza</h1>
+<h3 align="center">Passionate Python Django Backend Developer focused on creating high-performance backend systems</h3>
 
-A modern, responsive, and performance-optimized personal portfolio built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+<p align="center">
+  <a href="https://portfolio.selimreza.dev" target="_blank">
+    <img src="https://img.shields.io/badge/Website-portfolio.selimreza.dev-blue?style=for-the-badge&logo=vercel" alt="Portfolio Website" />
+  </a>
+  <a href="https://www.linkedin.com/in/selim-reza-a38a37318" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:selim.reza.uits@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
 
-## 🚀 Live Demo
-Coming soon...
+---
 
-## 🛠️ Built With
-- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Contact Form:** [EmailJS](https://www.emailjs.com/)
+### �‍�💻 About Me
 
-## 💻 Running Locally
+With 1.2+ years of professional experience in Python and Django development, I specialize in architecting advanced, scalable, and secure backend systems from the ground up. I build multi-vendor platforms, robust RESTful APIs, event-driven architectures (using Celery & Redis), and seamless integrations that power modern business operations. I'm deeply passionate about database optimization, clean code principles, and turning complex scaling challenges into efficient and performant solutions.
 
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:mohammadSelimReza/Personal-Portfolio.git
-   ```
+### 🛠️ Expertise & Technologies
 
-2. Navigate into the directory:
-   ```bash
-   cd Personal-Portfolio
-   ```
+- **Languages:** Python 🐍, JavaScript ✨
+- **Backend Frameworks:** Django 🎯, Django REST Framework (DRF), FastAPI
+- **Databases:** PostgreSQL 🐘, MySQL, Redis 🔴
+- **Architecture:** RESTful APIs, WebSockets, Event-Driven Architecture (EDA), Microservices
+- **Cloud & DevOps:** Docker 🐳, AWS ☁️, DigitalOcean, CI/CD (GitHub Actions), Nginx, Gunicorn
+- **Tools & Libraries:** Celery, Playwright/BeautifulSoup4 (Scraping), Git 📝
+- **Integrations:** Stripe, SSLCommerz, Twilio, third-party APIs
 
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+### � What I Do
 
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+- **API Development:** CustomRESTful APIs and real-time WebSockets with a focus on security, authentication (JWT), and rate-limiting.
+- **System Architecture & Database Design:** Complex schema design, query optimization, and structuring atomic transactions to ensure 100% data integrity.
+- **Performance Optimization:** Implementing advanced caching mechanisms with Redis, configuring Celery task queues for background operations, and profiling code for maximum efficiency.
+- **Cloud Deployment:** Seamlessly deploying robust API architectures and services to production using Docker and hardened VPS environments.
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
 
-## 📥 Features
-- **Responsive Design:** Fully responsive layout optimized for all devices.
-- **Scroll Animations:** Smooth scroll transitions and fade-in animations on sections.
-- **Contact Integration:** Functional contact form hooked up to EmailJS.
-- **Project Showcase:** Detailed cards displaying tech stacks, GitHub links, and descriptions.
-
-## 📄 License
-This project is licensed under the MIT License.
+<p align="center">
+  <i>"Building robust, scalable web applications and APIs that power modern businesses."</i>
+</p>
