@@ -171,7 +171,7 @@ export function Hero() {
                                 <div className="terminal-dot bg-[#ef4444]" />
                                 <div className="terminal-dot bg-[#f59e0b]" />
                                 <div className="terminal-dot bg-[#10b981]" />
-                                <span className="ml-3 text-xs text-[#475569] font-mono">
+                                <span className="ml-3 text-xs text-[var(--text-muted)] font-mono">
                                     selim@portfolio — zsh
                                 </span>
                             </div>
@@ -195,7 +195,7 @@ export function Hero() {
                                                 : line.type === "accent"
                                                     ? "terminal-accent"
                                                     : line.type === "label"
-                                                        ? "text-[#94a3b8]"
+                                                        ? "text-[var(--text-muted)]"
                                                         : ""
                                             }`}
                                     >

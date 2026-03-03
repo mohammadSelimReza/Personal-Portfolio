@@ -470,13 +470,14 @@
 }
 
 [data-theme="light"] .terminal {
-  background: #1e293b;
-  border-color: rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .terminal-header {
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom-color: rgba(0, 0, 0, 0.1);
+  background: #f8fafc;
+  border-bottom-color: rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .timeline-dot {
