@@ -617,11 +617,11 @@ export default function Portfolio() {
               Featured Projects
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="scroll-animate bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col h-full"
+                className="scroll-animate w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col h-full"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="relative h-48 overflow-hidden shrink-0">
