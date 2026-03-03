@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Selim Reza — Backend Engineer',
     description:
       'Performance-driven Backend Engineer specializing in Python, Django, and scalable systems.',
-    url: 'https://selimreza.dev',
+    url: 'https://portfolio.selimreza.dev',
     siteName: 'Selim Reza Portfolio',
     type: 'website',
   },
