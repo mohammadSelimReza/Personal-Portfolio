@@ -76,15 +76,13 @@ export function Hero() {
                             <span className="text-xl sm:text-2xl font-medium text-[var(--accent-primary)]">
                                 <TypeAnimation
                                     sequence={[
-                                        "Backend Engineer",
+                                        "Backend Developer",
                                         2000,
-                                        "AI-Augmented Builder",
+                                        "Python · Django · FastAPI",
                                         2000,
-                                        "Systems Thinker",
+                                        "REST API Engineer",
                                         2000,
-                                        "API Architect",
-                                        2000,
-                                        "Aspiring SRE",
+                                        "Production Systems Builder",
                                         2000,
                                     ]}
                                     wrapper="span"
@@ -99,10 +97,10 @@ export function Hero() {
                             variants={fadeInUp}
                             className="text-base sm:text-lg text-[var(--text-secondary)] font-light max-w-lg leading-relaxed mb-8"
                         >
-                            Blending deep Python, OOP & DSA expertise with AI-powered
-                            workflows to ship secured, production-grade systems. Awarded{" "}
+                            Building production-grade backend systems that serve real users
+                            and handle real money. Awarded{" "}
                             <span className="text-[var(--warning)] font-medium">
-                                &quot;Developer of the Quarter&quot;
+                                &quot;Best Backend Developer of the Quarter&quot;
                             </span>{" "}
                             at Join Venture AI.
                         </motion.p>

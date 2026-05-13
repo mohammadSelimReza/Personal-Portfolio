@@ -64,18 +64,34 @@ export function Projects() {
                                     ))}
                                 </div>
 
-                                <motion.a
-                                    href={featured.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium border border-[var(--glass-border)] bg-[var(--glass-bg)] text-[var(--text-primary)] hover:bg-[var(--glass-hover)] transition-all duration-300"
-                                    whileHover={{ scale: 1.03 }}
-                                    whileTap={{ scale: 0.97 }}
-                                >
-                                    <Github size={16} />
-                                    View Repository
-                                    <ExternalLink size={12} />
-                                </motion.a>
+                                <div className="flex gap-3">
+                                    {featured.liveUrl && (
+                                        <motion.a
+                                            href={featured.liveUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-[#3b82f6] text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all duration-300"
+                                            whileHover={{ scale: 1.03 }}
+                                            whileTap={{ scale: 0.97 }}
+                                        >
+                                            <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+                                            Live Site
+                                            <ExternalLink size={12} />
+                                        </motion.a>
+                                    )}
+                                    <motion.a
+                                        href={featured.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium border border-[var(--glass-border)] bg-[var(--glass-bg)] text-[var(--text-primary)] hover:bg-[var(--glass-hover)] transition-all duration-300"
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.97 }}
+                                    >
+                                        <Github size={16} />
+                                        View Repository
+                                        <ExternalLink size={12} />
+                                    </motion.a>
+                                </div>
                             </div>
                         </motion.div>
                     )}

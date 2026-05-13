@@ -19,6 +19,7 @@ export interface Project {
     architectureHighlight: string;
     tech: string[];
     github: string;
+    liveUrl?: string;
     featured?: boolean;
 }
 
@@ -38,30 +39,41 @@ export interface Goal {
 
 export const experiences: Experience[] = [
     {
-        title: "Backend Developer (Promoted)",
-        company: "Join Venture AI",
-        period: "Apr 2025 – Present",
+        title: "Backend Developer",
+        company: "Star Innovative Technologies Ltd.",
+        period: "Apr 2026 – Present",
         description:
-            "R&D for AI-based projects, designing data schemas, flows, and high-performance API architectures. Built real-time Customer Support Chat using WebSockets and implemented Atomic Transactions for 100% data integrity.",
+            "Optimizing FastAPI backend performance, maintaining production REST APIs, and enforcing code quality through structured PR reviews.",
         achievements: [
-            "Built real-time WebSocket chat with Atomic Transactions for 100% data integrity",
-            "Engineered EDA workflows for OTP and notification systems using Celery + Redis",
-            "Managed live deployments, domain configs, and client communication",
-            "Led AI-based R&D projects with high-performance API architectures",
+            "Optimized API response times by profiling slow ORM queries and restructuring PostgreSQL indexes, reducing average endpoint latency from 2s to under 200ms",
+            "Maintained and extended production REST APIs consumed by web and mobile clients, owning the full cycle from schema migration to deployment",
+            "Conducted code reviews on PRs and enforced consistent coding standards across the backend team using a main/staging branch workflow",
         ],
-        isPromoted: true,
+    },
+    {
+        title: "Backend Developer",
+        company: "Join Venture AI",
+        period: "Apr 2025 – Apr 2026",
+        description:
+            "Built RESTful APIs, WebSocket services, and event-driven pipelines for three production applications serving global clients. Managed CI/CD and production deployments.",
+        achievements: [
+            "Designed database schemas and built RESTful APIs and WebSocket services using Python and Django for three production applications (Scan2Home, Phlebotomy Staffing, Tether Voice Platform)",
+            "Engineered event-driven OTP and notification pipelines using Celery + Redis, handling async task queuing that reliably delivered notifications under load",
+            "Set up GitHub Actions CI/CD pipelines, reviewed intern PRs before merging to main, and managed production deployments on VPS with server monitoring",
+        ],
         award: "🏆 Best Backend Developer of the Quarter — Nov 2025",
     },
     {
-        title: "Backend Developer (Contract)",
-        company: "FAARNS (Remote)",
-        period: "Dec 2024 – Present",
+        title: "Backend Developer (Remote)",
+        company: "FAARNS",
+        period: "Dec 2024 – Jun 2025",
         description:
-            "Built two production platforms from scratch — a drop-shipping and a parcel-forwarding system. Now providing ongoing maintenance and performance scaling.",
+            "Built the complete backend for americatobd.com — a production e-commerce platform with automated product scraping, live financial transactions, and payment gateway integrations.",
         achievements: [
-            "Built & launched AmericaToBD.us — drop-shipping & parcel-forwarding platform",
-            "Built & launched AmericaToBD.com — global shopping automation platform",
-            "Currently maintaining both products with performance scaling & monitoring",
+            "Built the complete backend for americatobd.com, a production e-commerce platform with automated product scraping from Amazon, eBay, Walmart, and Nike",
+            "Developed admin dashboard with order tracking, customer management, and platform monitoring — handling real financial transactions",
+            "Implemented JWT authentication, role-based access control, and integrated Bkash payment gateway for the Bangladeshi market",
+            "Designed and maintained PostgreSQL database with proper migrations, joins, and indexing",
         ],
     },
 ];
@@ -70,55 +82,76 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     {
-        title: "Scan2Home — Real Estate Platform",
-        role: "Backend & AI Integration Engineer",
+        title: "AmericaToBD — Production E-Commerce Platform",
+        role: "Backend Developer",
         description:
-            "A robust microservices architecture orchestrating property inventory management and automated data extraction.",
+            "Cross-border e-commerce platform serving real users with live financial transactions since 2025. Automated product scraping from Amazon, eBay, Walmart, and Nike with graceful fallback to manual purchase forms.",
         architectureHighlight:
-            "Django (Core API) decoupled from an isolated FastAPI AI module via a secure internal Docker network, reverse-proxied by Nginx. AI module operates without internet access — enterprise-grade security.",
-        tech: ["Django", "FastAPI", "PostgreSQL 16", "Docker Compose", "GitHub Actions"],
-        github: "https://github.com/mohammadSelimReza/Scan2Home-Smart-Reusable-Board",
+            "Headless browser automation with Playwright + BeautifulSoup, backed by PostgreSQL storage. Admin dashboard for order lifecycle management, customer tracking, and sales monitoring. Integrated Bkash payment gateway.",
+        tech: ["Django", "PostgreSQL", "Playwright", "BeautifulSoup", "Bkash", "JWT"],
+        github: "https://github.com/mohammadSelimReza/Global-shopping-automation-and-forwarding-platform-server",
+        liveUrl: "https://americatobd.com",
         featured: true,
     },
     {
-        title: "Global Shopping Automation Engine",
-        role: "Backend Developer & Deployment Engineer",
+        title: "Scan2Home — Microservices Real Estate Platform",
+        role: "Backend & AI Integration Engineer",
         description:
-            "A resilient product sourcing platform automating data extraction across major international marketplaces (Amazon, eBay, Nike).",
+            "Property management platform with AI-powered analysis. Microservices architecture with isolated AI module running in secure Docker containers.",
         architectureHighlight:
-            "Headless browser automation with Playwright + BeautifulSoup, backed by PostgreSQL storage and Cloudinary media. Graceful degradation to manual forms on failure — zero stuck orders.",
-        tech: ["Playwright", "BeautifulSoup", "Django 5.x", "WeasyPrint", "JWT"],
-        github: "https://github.com/mohammadSelimReza/Global-shopping-automation-and-forwarding-platform-server",
+            "Django (Core API) decoupled from an isolated FastAPI AI module via a secure internal Docker network, reverse-proxied by Nginx. AI module operates without internet access — enterprise-grade security. GitHub Actions CI/CD for automated testing and deployment.",
+        tech: ["Django", "FastAPI", "PostgreSQL", "Redis", "Docker Compose", "GitHub Actions"],
+        github: "https://github.com/mohammadSelimReza/Scan2Home-Smart-Reusable-Board",
     },
     {
-        title: "Phlebotomy Staffing Orchestrator",
+        title: "Phlebotomy Staffing Backend",
         role: "Backend Engineer",
         description:
-            "Cross-border marketplace backend orchestrating matching, scheduling, and billing between businesses and medical professionals.",
+            "Cross-border marketplace backend for matching, scheduling, and billing between clinical businesses and medical professionals.",
         architectureHighlight:
-            "Complex Stripe subscription lifecycles — multi-tier billing, invoice cycles, and split payments. Deep user modularity (availability matrices vs. digital compliance contracts).",
-        tech: ["Stripe API", "Redis", "Docker", "Django REST Framework"],
+            "Complex Stripe subscription lifecycles — multi-tier billing, invoice cycles, and split payments. User lifecycle management with credential verification, compliance contracts, and availability scheduling.",
+        tech: ["Django REST Framework", "PostgreSQL", "Stripe API", "Redis", "Docker", "CI/CD"],
         github: "https://github.com/mohammadSelimReza/Phlebotomy-Staffing-App-s-Backend-Server",
+    },
+    {
+        title: "Tether — AI Voice Platform",
+        role: "Backend Developer",
+        description:
+            "Voice cloning and real-time AI chat platform with streaming TTS, WebSocket communication, and Firebase push notifications.",
+        architectureHighlight:
+            "Microservice architecture with Django + FastAPI. Real-time AI voice streaming with WebSockets. Cross-platform push notifications via Firebase FCM.",
+        tech: ["Django", "FastAPI", "PostgreSQL", "Redis", "Firebase FCM", "Docker"],
+        github: "https://github.com/mohammadSelimReza/AI-Voice-Conversation-Platform-Backend-Server",
+    },
+    {
+        title: "Car Rental (RentHub)",
+        role: "Backend Developer",
+        description:
+            "Multi-role marketplace with WebSocket real-time chat, RBAC across 4 roles, and automated Stripe booking payments & agency payouts.",
+        architectureHighlight:
+            "Django Channels for real-time WebSocket chat. RBAC across 4 user roles. Stripe integration for booking payments and automated agency payouts via Celery.",
+        tech: ["Django 6.0", "DRF", "Django Channels", "Celery", "PostgreSQL", "Redis", "Stripe"],
+        github: "https://github.com/mohammadSelimReza/Car-Rental-Management",
     },
     {
         title: "Bestowe — AI Gift Finder",
         role: "Backend Developer",
         description:
-            "Intelligent backend providing personalized gift recommendations and multi-user split-funding mechanisms.",
+            "LLM-powered gift recommendation engine with collaborative pool-funding via Stripe + Shopify API for split payment reconciliation.",
         architectureHighlight:
             "LLM-integrated recommendation engine with multi-user pool funding — reconciling Stripe payments with Shopify API for third-party marketplace checkout.",
-        tech: ["LLMs", "LangChain", "Stripe API", "Shopify API", "PostgreSQL"],
+        tech: ["Django DRF", "LLMs", "Stripe API", "Shopify API", "PostgreSQL"],
         github: "https://github.com/mohammadSelimReza/Project-Bestowe-Smart-Gift-Finder-Backend",
     },
     {
-        title: "EduSoft E-Learning Platform",
-        role: "Full-Stack Developer",
+        title: "JobPulse — SMS Job Alerts API",
+        role: "Backend Developer",
         description:
-            "Feature-rich e-learning platform with browsing, enrollment, payments, and interactive learning experiences.",
+            "Production REST API distributing job offers via SMS with OTP auth, Orange SMS API (OAuth2), and Celery Beat automated broadcasts.",
         architectureHighlight:
-            "JWT authentication with RBAC, Swagger-documented APIs, SSLCommerz payment integration, and React frontend with Tailwind CSS.",
-        tech: ["Django", "DRF", "PostgreSQL", "SSLCommerz", "React", "Tailwind CSS"],
-        github: "https://github.com/mohammadSelimReza/EduSoft---Learning-Management-System",
+            "Phone-based OTP authentication. Celery Beat for daily broadcast scheduling. USSD webhook support, CSV bulk upload, phone blacklisting, and admin dashboard.",
+        tech: ["Django 6.0", "DRF", "Celery", "PostgreSQL", "Redis", "Orange SMS API"],
+        github: "https://github.com/mohammadSelimReza/JobPulse-Web-App",
     },
 ];
 
@@ -138,7 +171,7 @@ export const skillCategories: SkillCategory[] = [
         ],
     },
     {
-        category: "Data & Caching",
+        category: "Databases & Caching",
         icon: "🗄️",
         skills: [
             { name: "PostgreSQL", color: "#4169E1" },
@@ -147,7 +180,7 @@ export const skillCategories: SkillCategory[] = [
         ],
     },
     {
-        category: "DevOps & Infra",
+        category: "DevOps & Cloud",
         icon: "🐳",
         skills: [
             { name: "Docker", color: "#2496ED" },
@@ -159,11 +192,12 @@ export const skillCategories: SkillCategory[] = [
         ],
     },
     {
-        category: "Auth & Real-Time",
+        category: "Auth & Payments",
         icon: "🔒",
         skills: [
             { name: "JWT", color: "#000000" },
             { name: "RBAC", color: "#5C2D91" },
+            { name: "OAuth2", color: "#EB5424" },
             { name: "Stripe", color: "#008CDD" },
             { name: "WebSockets", color: "#010101" },
         ],
@@ -196,22 +230,22 @@ export const goals: Goal[] = [
     {
         icon: "🔧",
         label: "Backend Engineering",
-        description: "Production systems at scale",
+        description: "Production systems that serve real users at scale",
     },
     {
         icon: "☁️",
-        label: "AWS & Cloud",
-        description: "EC2, ECS, S3, RDS, CloudWatch",
+        label: "Cloud & AWS",
+        description: "EC2, S3, VPC, RDS — production infrastructure",
     },
     {
         icon: "🐳",
         label: "DevOps",
-        description: "Docker, CI/CD, IaC (Terraform)",
+        description: "Docker, CI/CD, automated deployment pipelines",
     },
     {
-        icon: "🔍",
-        label: "SRE",
-        description: "Monitoring, SLOs, Incident Response",
+        icon: "📊",
+        label: "System Design",
+        description: "Scalable architectures, microservices, event-driven systems",
     },
 ];
 
@@ -248,7 +282,7 @@ export const socialLinks = [
     },
     {
         label: "LinkedIn",
-        href: "http://www.linkedin.com/in/selim-reza-dev",
+        href: "https://www.linkedin.com/in/selim-reza-dev/",
         icon: "linkedin",
     },
     {
@@ -265,6 +299,5 @@ export const navLinks = [
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
-    { href: "#goals", label: "Goals" },
     { href: "#contact", label: "Contact" },
 ];

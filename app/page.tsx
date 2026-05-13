@@ -8,7 +8,6 @@ import { Hero } from "@/components/sections/Hero";
 import { Experience } from "@/components/sections/Experience";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
-import { Goals } from "@/components/sections/Goals";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Portfolio() {
@@ -31,40 +30,43 @@ export default function Portfolio() {
                       About
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4 tracking-tight">
-                      Backend Specialist.{" "}
+                      Backend Developer.{" "}
                       <span className="text-[var(--text-secondary)] font-normal">
-                        AI-Augmented Builder.
+                        Production Systems Builder.
                       </span>
                     </h2>
                     <p className="text-[var(--text-secondary)] font-light leading-relaxed text-base md:text-lg mb-4">
-                      I&apos;m a performance-driven Backend Engineer with 1.2+
-                      years of experience designing and shipping{" "}
-                      <span className="text-[var(--text-primary)] font-medium">secured, production-grade</span>{" "}
-                      APIs, microservice architectures, and AI-integrated
-                      platforms — built with a{" "}
-                      <span className="text-[var(--text-primary)] font-medium">debugging-first mindset</span>{" "}
-                      that optimizes the entire product lifecycle.
+                      I&apos;m a Backend Developer with 2
+                      years of professional experience designing and shipping{" "}
+                      <span className="text-[var(--text-primary)] font-medium">production-grade</span>{" "}
+                      REST APIs, microservice architectures, and data-driven
+                      business platforms — built with a{" "}
+                      <span className="text-[var(--text-primary)] font-medium">ship-it mindset</span>{" "}
+                      that takes features from spec to deployment.
                     </p>
                     <p className="text-[var(--text-secondary)] font-light leading-relaxed text-base md:text-lg mb-4">
-                      In this age of AI agents, I blend deep expertise in{" "}
-                      <span className="text-[var(--accent-secondary)] font-medium">Python, DBMS, OOP & DSA</span>{" "}
-                      with AI-powered workflows to ship faster, smarter, and with
-                      fewer bugs. From Stripe subscription orchestration to
-                      AI-powered property analysis engines behind isolated Docker
+                      My work spans customer-facing platforms, admin dashboards,
+                      order lifecycle management, and payment orchestration
+                      (Stripe, Bkash). From{" "}
+                      <span className="text-[var(--accent-secondary)] font-medium">e-commerce with live transactions</span>{" "}
+                      to AI-powered property analysis engines behind isolated Docker
                       networks — I build systems that handle real traffic, real
                       money, and real users.
                     </p>
                     <p className="text-[var(--text-secondary)] font-light leading-relaxed">
-                      Currently a Promoted Backend Developer at{" "}
-                      <span className="text-[var(--text-primary)] font-medium">Join Venture AI</span>,{" "}
-                      with two shipped products at{" "}
-                      <span className="text-[var(--text-primary)] font-medium">FAARNS</span> under contract maintenance.
+                      Currently a Backend Developer at{" "}
+                      <span className="text-[var(--text-primary)] font-medium">Star Innovative Technologies Ltd.</span>{" "}
+                      Previously shipped 3 production apps at{" "}
+                      <span className="text-[var(--text-primary)] font-medium">Join Venture AI</span>{" "}
+                      and built{" "}
+                      <a href="https://americatobd.com" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-primary)] font-medium hover:underline">americatobd.com</a>{" "}
+                      at <span className="text-[var(--text-primary)] font-medium">FAARNS</span>.
                     </p>
                   </div>
                   <div className="flex flex-col items-center gap-5">
                     <div className="text-center">
                       <div className="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-1">
-                        1.2+
+                        2
                       </div>
                       <p className="text-[var(--text-secondary)] text-sm font-medium">
                         Years Experience
@@ -82,7 +84,7 @@ export default function Portfolio() {
                     <div className="w-12 h-px bg-[var(--glass-border)]" />
                     <div className="text-center">
                       <div className="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-1">
-                        2
+                        3
                       </div>
                       <p className="text-[var(--text-secondary)] text-sm font-medium">
                         Companies
@@ -97,7 +99,6 @@ export default function Portfolio() {
           <Experience />
           <Projects />
           <Skills />
-          <Goals />
           <Contact />
         </main>
         <Footer />

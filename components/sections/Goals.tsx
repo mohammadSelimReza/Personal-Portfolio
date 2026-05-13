@@ -81,12 +81,11 @@ export function Goals() {
 
                                 <div className="border-t border-white/[0.06] pt-4 mt-4">
                                     <p className="text-[#94a3b8] text-sm mb-2">
-                                        <span className="text-[#f59e0b]">Goal:</span> Transition
-                                        into a{" "}
+                                        <span className="text-[#f59e0b]">Goal:</span> Build{" "}
                                         <span className="text-[#3b82f6] font-medium">
-                                            Site Reliability Engineering
+                                            production backend systems
                                         </span>{" "}
-                                        role at a global MNC
+                                        that scale and serve real users
                                     </p>
                                     <p className="terminal-prompt font-semibold">
                                         selim@portfolio:~${" "}
